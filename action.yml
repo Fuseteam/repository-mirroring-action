@@ -1,5 +1,5 @@
 name: "Mirroring Repository"
-description: "Mirror a repository to another repository on GitHub, GitLab, BitBucket, AWS CodeCommit, etc."
+description: "Push commits to another repository on GitHub, GitLab, BitBucket, AWS CodeCommit, etc."
 branding:
   icon: "archive"
   color: "blue"
@@ -14,6 +14,12 @@ inputs:
     description: "Username for ssh connection"
     required: false
     default: "git"
+  email:
+    description: "email address for git commits"
+    required: true
+  name:
+    description: "name associated with git commits"
+    required: true
 runs:
   using: 'docker'
   image: 'Dockerfile'
