@@ -8,4 +8,5 @@ git config --global user.email $INPUT_EMAIL
 git config --global user.name $INPUT_NAME
 git remote add mirror "$INPUT_TARGET_REPO_URL"
 git pull --rebase mirror master
+git diff
 git push mirror
