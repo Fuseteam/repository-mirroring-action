@@ -20,6 +20,9 @@ inputs:
   name:
     description: "name associated with git commits"
     required: false
+  target_branch:
+    description: "name of target branch"
+    require: true
 runs:
   using: 'docker'
   image: 'Dockerfile'
