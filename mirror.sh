@@ -7,6 +7,6 @@ export GIT_SSH_COMMAND="ssh -v -i ~/.ssh/id_rsa -o StrictHostKeyChecking=no -l $
 git config --global user.email $INPUT_EMAIL
 git config --global user.name $INPUT_NAME
 git remote add mirror "$INPUT_TARGET_REPO_URL"
-git pull --rebase mirror master
+git pull --rebase mirror "$INPUT_TARGET_BRANCH"
 git diff
 git push mirror
