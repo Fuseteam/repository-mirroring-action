@@ -14,12 +14,6 @@ inputs:
     description: "Username for ssh connection"
     required: false
     default: "git"
-  email:
-    description: "email address for git commits"
-    required: false
-  name:
-    description: "name associated with git commits"
-    required: false
   target_branch:
     description: "name of target branch"
     require: true
