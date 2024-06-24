@@ -10,5 +10,6 @@ git config --global user.email "$EMAIL"
 git config --global user.name "$NAME"
 git remote add mirror "$INPUT_TARGET_REPO_URL"
 git pull --rebase mirror "$INPUT_TARGET_BRANCH"
+git am --show-current-patch
 git diff
 git push mirror
